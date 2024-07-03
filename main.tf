@@ -80,7 +80,6 @@ resource "aws_launch_template" "this" {
 
   network_interfaces {
     device_index = 0
-    associate_public_ip_address = true
     security_groups             = [aws_security_group.this.id]
     delete_on_termination       = true
   }
