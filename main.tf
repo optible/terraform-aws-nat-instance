@@ -38,7 +38,7 @@ resource "aws_route" "this" {
   network_interface_id   = aws_network_interface.this.id
 }
 
-# AMI of the latest Amazon Linux 2 
+# AMI of the latest Amazon Linux 2
 data "aws_ami" "this" {
   most_recent = true
   owners      = ["amazon"]
